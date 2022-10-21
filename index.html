@@ -4,22 +4,48 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title> My test page</title>
-        <link rel="stylesheet" href="style.css">
-        
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            p {
+              font-family: 'helvetica neue', helvetica, sans-serif;
+              letter-spacing: 1px;
+              text-transform: uppercase;
+              text-align: center;
+              border: 2px solid rgba(0,0,200,0.6);
+              background: rgba(0,0,200,0.3);
+              color: rgba(0,0,200,0.6);
+              box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+              border-radius: 10px;
+              padding: 3px 10px;
+              display: inline-block;
+              cursor: pointer;
+            }
+            
+          </style>
     </head>
     <body>
-        <h1>Mozilla is cool</h1>
-            <img src="https://github.com/Masato0605/webp-excercise1/blob/main/firefox-icon.png?raw=true" alt="My test image">
-            <p>Masato kadai</p>
-        <p>
-               At Mozilla,we're a global community of
+        <h1>5421027 佐野雅仁</h1>
+        
+            <a href="css/image/firefox-icon.png"><img src="css/imag/firefox2.png"></a>
+            <p>
+                名前を入力
             </p>
-            <ul>
-                <li>technologists</li>
-                <li>thinkers</li>
-                <li>builders</li>
-            </ul>
-            <p>working together</p>
-            <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a> to learn even more about the values and principles that guide the pursuit of our mission.</p>
+      
+            <p>名前を変更</p>
+            <h1>
+            <a href="https://www.mozilla.org/ja/">the Mozilla homepage</a>.
+            </h1>
+        
+            <script>
+                window.prompt("ユーザー名","")
+            const para = document.querySelector('p');
+
+             para.addEventListener('click', updateName);
+
+             function updateName() {
+                 const name = prompt('名前を入力して下さい');
+                      para.textContent = `Player 1: ${name}`;
+                  }
+                  </script>
     </body>
 </html>
